@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>position과 flexbox를 연습하자4</title>
+    <script
+      src="https://kit.fontawesome.com/2c827c8cca.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       /* css 초기화 */
       body {
@@ -18,6 +22,7 @@
 
       .box-container {
         position: relative;
+        margin-bottom: 200px;
       }
 
       .box {
@@ -33,12 +38,61 @@
         left: 100px;
         background: rgb(73, 73, 73);
       }
+
+      .link-area {
+        padding: 0 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .next {
+        width: 59px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px 15px;
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+      }
+
+      .next:hover {
+        background-color: black;
+        color: white;
+      }
+
+      i {
+        font-size: 30px;
+      }
+
+      .home {
+        color: black;
+      }
+
+      .home:hover {
+        color: gray;
+      }
     </style>
   </head>
   <body>
     <div class="box-container">
       <div class="box box1">div1</div>
       <div class="box box2">div2</div>
+    </div>
+
+    <div class="link-area">
+      <a href="https://cute-mooncake-06500f.netlify.app/" class="next"
+        ><i class="fa-solid fa-caret-left"></i>문제3</a
+      >
+      <a href="https://illustrious-flan-1af204.netlify.app/" class="home"
+        ><i class="fa-solid fa-house"></i
+      ></a>
+      <a href="https://stupendous-sawine-cfb9b9.netlify.app/" class="next"
+        >문제5<i class="fa-solid fa-caret-right"></i
+      ></a>
     </div>
   </body>
 </html>
